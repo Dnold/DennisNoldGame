@@ -48,7 +48,7 @@ public class RotationAnimator : MonoBehaviour
         angle = ((angle + 360+225) - 45 ) % 360;
 
         // Calculate sprite index based on angle; assumes sprites are ordered 0, 45, 90, ..., 315 degrees
-        int index = Mathf.RoundToInt((angle / 90)) % 4;
+        int index = Mathf.RoundToInt((angle / 45)) % 8;
         return index;
     }
     void FaceCamera()
